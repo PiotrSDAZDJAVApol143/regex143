@@ -10,7 +10,7 @@ public class Regex001 {
     zaczynające się cyfrą 5.
      */
 
-    private static final Pattern PATTERN = Pattern.compile("^(\\+48)? 5\\d{8}");
+    private static final Pattern PATTERN = Pattern.compile("^(\\+48)?5\\d{8}");
 
     public static void main(String[] args) {
         validate("515332123");
@@ -20,11 +20,11 @@ public class Regex001 {
         validate("715332123");
         validate("712123");
         validate("51123");
-        validate("+48 518111999");
-        validate("48 518111999");
-        validate("+8 518111999");
-        validate("+4 518111999");
-        validate("+ 518111999");
+        validate("+48518111999");
+        validate("48518111999");
+        validate("+8518111999");
+        validate("+4518111999");
+        validate("+518111999");
 
 
     }
