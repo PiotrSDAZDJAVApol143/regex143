@@ -26,5 +26,14 @@ return "Moja informacja o Autorze: " + firstname;
         this.firstname = firstname;
         this.surname = surname;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "firstname='" + firstname + '\'' +
+                ", surname='" + surname + '\'' +
+                ", nationality='" + nationality + '\'' +
+                '}';
+    }
 }
 

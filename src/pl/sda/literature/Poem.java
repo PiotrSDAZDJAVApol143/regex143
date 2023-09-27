@@ -27,7 +27,13 @@ public class Poem {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    @Override
     public String toString() {
-        return ":: " + title + " ::" + stropheNumbers;
+        return "Poem{" +
+                "creator=" + creator +
+                ", stropheNumbers=" + stropheNumbers +
+                ", title='" + title + '\'' +
+                '}';
     }
 }
